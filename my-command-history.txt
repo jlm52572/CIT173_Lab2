@@ -1,0 +1,20 @@
+    1  clear
+    2  mkdir CIT173_Lab2
+    3  echo $SHELL
+    4  echo $0
+    5  type bash
+    6  cd ~/
+    7  git clone https://github.com/RenoTechnologyAcademy/CIT173_Lab2_Files.git
+    8  cat ~/CIT173_Lab2_Files/phonebook1.txt ~/CIT173_Lab2_Files/phonebook2.txt > ~/CIT173_Lab2/my-phonebook.txt
+    9  wc ~/CIT173_Lab2/my-phonebook.txt 
+   10  cat ~/CIT173_Lab2/my-phonebook.txt > less
+   11  cat ~/CIT173_Lab2_Files/phonelisting1.txt ~/CIT173_Lab2_Files/phonelisting2.txt > ~/CIT173_Lab2/my-phonelisting.txt
+   12  tac ~/CIT173_Lab2/my-phonelisting.txt > ~/CIT173_Lab2/my-phonebook-reverse.txt
+   13  join ~/CIT173_Lab2/my-phonebook.txt ~/CIT173_Lab2/my-phonelisting.txt > ~/CIT173_Lab2/my-joined-phonebook.txt
+   14  unexpand ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-tabbed.phonebook.txt
+   15  sort ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-sorted-phonebook.txt
+   16  nl ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-numbered-phonebook.txt
+   17  head ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-head-phonebook.txt
+   18  tail ~/CIT173_Lab2/my-phonebook.txt > ~/CIT173_Lab2/my-tail-phonebook.txt
+   19  history ~/CIT173_Lab2/my-command-history.txt
+   20  history > ~/CIT173_Lab2/my-command-history.txt
